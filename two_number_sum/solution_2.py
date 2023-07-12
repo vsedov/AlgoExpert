@@ -15,7 +15,7 @@ import pyinspect as pi
 def twoNumberSum(array, targetSum):
     # Write your code here.
     container = {}
-    for i, val in enumerate(array):
+    for val in array:
         target = targetSum - val
 
         if target in container:
@@ -28,8 +28,7 @@ def twoNumberSum(array, targetSum):
 
 
 def main() -> None:
-    twoNumberSum([_ for _ in range(10)], 5)
-    pass
+    twoNumberSum(list(range(10)), 5)
 
 
 if __name__ == "__main__":
