@@ -21,12 +21,12 @@ def isValidSubsequence(array: List[int], sequence: int) -> bool:
 
     filtered = []
 
-    for i in range(len(array)):
+    for item in array:
         if len(filtered) == len(sequence):
             break
 
-        if array[i] in sequence:
-            filtered.append(array[i])
+        if item in sequence:
+            filtered.append(item)
 
     return filtered == sequence
 

@@ -17,9 +17,9 @@ def isValidSubsequence(array: List[int], sequence: int) -> bool:
 
     # another method to deal with the validate subsequence .
 
-    for i in range(len(array)):
+    for item in array:
 
-        if array[i] == sequence[0]:
+        if item == sequence[0]:
             sequence.pop(0)
 
         if len(sequence) == 0:
